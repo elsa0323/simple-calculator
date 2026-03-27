@@ -4,7 +4,7 @@ reset=False
 def click(num):
     global reset
     current = entry.get()
-    if reset and current and num.isdigit() and  current[-1].isdigit():
+    if reset and current and num.isdigit() and  current.isdigit():
         entry.delete(0, tk.END)
         reset = False
 
