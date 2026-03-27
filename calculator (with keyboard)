@@ -4,7 +4,7 @@ reset=False
 def click(num):
     global reset
     current = entry.get()
-    if reset and current and num.isdigit() and  current[-1].isdigit():
+    if reset and current and num.isdigit() and  current.isdigit():
         entry.delete(0, tk.END)
         reset = False
     functions = ["sqrt(", "sin(", "cos(", "tan(", "log(", "ln(","("]
@@ -17,7 +17,7 @@ def click(num):
 def click_key(num):
     global reset
     current = entry.get()
-    if reset and current and num.isdigit() and  current[-1].isdigit():
+    if reset and current and num.isdigit() and  current.isdigit():
         entry.delete(0, tk.END)
         entry.insert(tk.END, str(num))
         reset = False
